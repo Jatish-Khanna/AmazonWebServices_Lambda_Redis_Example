@@ -1,0 +1,9 @@
+Add in API gateway ---> Integration request -------> Mapping Template ---->  When there are no templates defined (recommended)
+   --------> Content/type (application/json)
+   
+   
+
+#set($inputRoot = $input.path('$'))
+{ 
+  "myID" : "$input.params('myID')"
+}
