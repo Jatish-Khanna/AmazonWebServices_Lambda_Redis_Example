@@ -26,7 +26,7 @@ public class TestLambda implements RequestHandler<TestModel, Object> {
   
   public Object handleRequest(final TestModel testModel, final Context context) {
 
-    TestModel testModel = redisOperationsRepository.findValueById(visitor.getVistorid());
+    TestModel testModel = redisOperationsRepository.findValueById(testModel.getKey());
     return new GatewayResponse(testModel, headers, 200);
   }
 }
