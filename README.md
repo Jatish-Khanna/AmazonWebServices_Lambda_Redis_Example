@@ -2,4 +2,4 @@
 This project represent to connect to Amazon Web services redis cluster using AWS Lambda
 
 
-API Gateway + AWS Lambda + Redis Standalone
+API Gateway + AWS Lambda + Elastic Cache (Redis Standalone)
