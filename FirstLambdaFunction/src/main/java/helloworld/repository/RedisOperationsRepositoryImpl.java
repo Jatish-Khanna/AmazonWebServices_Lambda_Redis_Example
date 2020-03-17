@@ -32,7 +32,7 @@ public class RedisOperationsRepositoryImpl {
     openRedisConnection();
     TestModel testModel = null;
     try {
-      redisCommands.set("1", new TestModel("myID", "", "", "", ""));
+      redisCommands.set("REDIS_Key_1", new TestModel("myID"));
       testModel = redisCommands.get(modelId);
     } finally {
       if (redisConnection.isOpen()) {
