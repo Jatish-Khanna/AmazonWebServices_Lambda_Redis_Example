@@ -15,7 +15,7 @@ public class TestLambda implements RequestHandler<TestModel, Object> {
 
   private static final String APP_RESPONSE_TYPE = "application/json";
   private final RedisOperationsRepositoryImpl redisOperationsRepository = new RedisOperationsRepositoryImpl();
-  private final Map<String, String> headers = new HashMap<>();
+  private final Map<String, Object> headers = new HashMap<>();
   public TestLambda() {
         
     headers.put("Content-Type", APP_RESPONSE_TYPE);
